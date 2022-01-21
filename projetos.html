@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio Mateus</title>
+    <style>
+        .nav {
+            margin-bottom: 50px;
+        }
+
+        .content2 {
+            margin-left: -15px;
+            font-size: 10pt;
+        }
+
+        .tag1 {
+            margin-left: -20px;
+        }
+
+        .div {
+            display: grid;
+            position: relative;
+            box-shadow: 1px 1px 1px 1px rgba(47, 79, 79, 0.5);
+            height: 700px;
+        }
+
+        .divgrandeteste {
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            top: 70px;
+            left: 150px;
+            box-shadow: 0px 2px 2px 2px rgba(153, 192, 192, 0.37);
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        #divgrandeteste1:hover {
+            height: 300px;
+            width: 330px;
+            position: absolute;
+            top: 0px;
+            left: 60px;
+            transition: 100ms ease-in-out;
+            text-align: center;
+            box-shadow: none;
+        }
+
+        #divgrandeteste2 {
+            position: absolute;
+            top: 70px;
+            left: 550px;
+        }
+
+        #divgrandeteste2:hover {
+            height: 300px;
+            width: 330px;
+            position: absolute;
+            top: 0px;
+            left: 450px;
+            transition: 100ms ease-in-out;
+            text-align: center;
+            box-shadow: none;
+        }
+        #divgrandeteste3{
+            position: absolute;
+            top: 400px;
+            left: 150px;
+        }
+        #divgrandeteste3:hover{
+            height: 300px;
+            width: 330px;
+            position: absolute;
+            transition: 100ms ease-in-out;
+            text-align: center;
+            box-shadow: none;
+            top: 330px;
+            left: 60px;
+        }
+        #divgrandeteste4{
+            position: absolute;
+            top: 400px;
+            left: 550px;
+        }
+        #divgrandeteste4:hover{
+            height: 300px;
+            width: 330px;
+            position: absolute;
+            transition: 100ms ease-in-out;
+            text-align: center;
+            box-shadow: none;
+            top: 330px;
+            left: 450px;
+        }
+
+        .buttons {
+            margin-top: 0px;
+            margin-left: -5px;
+            display: none;
+        }
+
+        #img,
+        #img2, #img3, #img4 {
+            margin-top: -25px;
+            margin-bottom: 2px;
+            display: none;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class='nav'>
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                </div>
+                <div id="navbarBasicExample" class="navbar-menu is-active">
+                    <div class="navbar-start is-active">
+                        <a class="navbar-item" href="index.html">
+                            Início
+                        </a>
+                        <a class="navbar-item">
+                            Projetos
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class='section'>
+        <div class="container">
+            <div class="columns ">
+                <div class='column is-3'>
+                    <div>
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <abbr title="Em construção">
+                                        <img src="https://bulma.io/images/placeholders/1280x960.png"
+                                            alt="Placeholder image">
+                                    </abbr>
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">Mateus Leite</p>
+                                        <p class='tag is-dark tag1'>JavaScript Front-End Developer</p>
+                                    </div>
+                                </div>
+
+                                <div class="content content2">
+                                    (44)99141-6555 <i class="fa fa-whatsapp" style="color: green;"></i>
+                                    mateus.lcsilva@outlook.com
+                                    <a href="https://github.com/mateuslcsilva"
+                                        target="_blank">https://github.com/mateuslcsilva</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-9 div">
+
+                    <div class='divgrandeteste' id='divgrandeteste1' onmouseleave="mouseo(1)" onmouseenter="mousee(1)">
+                        <h3 class='title is-5'>PASSWORD GENERATOR</h3>
+                        <p style="font-size: 8pt;" id='hover'>(HOVER ME)</p>
+                        <img src="passwordgenerator2.png" alt="PasswordGenerator" id='img' class='image is 256x256'>
+                        <div class='buttons'>
+                            <button class='button '><a href="https://mateuslcsilva.github.io/PasswordGenerator/"
+                                    target="_blank">VER PROJETO</a></button>
+                            <button class="button "><a
+                                    href="https://github.com/mateuslcsilva/PasswordGenerator/blob/main/script.js"
+                                    target="_blank">VER CÓDIGO</a></button>
+                        </div>
+                    </div>
+                    <div class='divgrandeteste' id='divgrandeteste2' onmouseenter="mousee(2)" onmouseleave="mouseo(2)">
+                        <h3 class='title is-5'>CONTROLE DE VENDAS</h3>
+                        <p style="font-size: 8pt;" id='hover2'>(HOVER ME)</p>
+                        <img src="vendasbar2.png" alt="vendasbar" id='img2'>
+                        <div class='buttons' id='buttons2'>
+                            <button class='button '><a href="https://mateuslcsilva.github.io/vendasbar/"
+                                    target="_blank">VER PROJETO</a></button>
+                            <button class="button "><a
+                                    href="https://github.com/mateuslcsilva/vendasbar/blob/main/script.js"
+                                    target="_blank">VER CÓDIGO</a></button>
+                        </div>
+
+                    </div>
+
+                    <div class='divgrandeteste' id='divgrandeteste3' onmouseenter="mousee(3)" onmouseleave="mouseo(3)">
+                        <h3 class='title is-5'>CONTAGEM REGRESSIVA</h3>
+                        <p style="font-size: 8pt;" id='hover3'>(HOVER ME)</p>
+                        <img src="contagemregressiva.png" alt="vendasbar" id='img3'>
+                        <div class='buttons' id='buttons3'>
+                            <button class='button '><a href="https://mateuslcsilva.github.io/ContagemRegressiva/"
+                                    target="_blank">VER PROJETO</a></button>
+                            <button class="button "><a
+                                    href="https://github.com/mateuslcsilva/ContagemRegressiva/blob/main/script.js"
+                                    target="_blank">VER CÓDIGO</a></button>
+                        </div>
+
+                    </div>
+
+                    <div class='divgrandeteste' id='divgrandeteste4' onmouseenter="mousee(4)" onmouseleave="mouseo(4)">
+                        <h3 class='title is-5'>QUIZ MATEMÁTICA</h3>
+                        <p style="font-size: 8pt;" id='hover4'>(HOVER ME)</p>
+                        <img src="quizmatematica.png" alt="vendasbar" id='img4'>
+                        <div class='buttons' id='buttons4'>
+                            <button class='button '><a href="https://mateuslcsilva.github.io/quizmatematica/"
+                                    target="_blank">VER PROJETO</a></button>
+                            <button class="button "><a
+                                    href="https://github.com/mateuslcsilva/quizmatematica/blob/master/scriptnormal.js"
+                                    target="_blank">VER CÓDIGO</a></button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--
+
+    -->
+    <script src="script.js"></script>
+</body>
+
+</html>
